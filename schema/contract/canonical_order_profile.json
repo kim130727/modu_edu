@@ -1,0 +1,42 @@
+﻿{
+  "semantic_root_order": [
+    "schema_version",
+    "render_contract_version",
+    "problem_id",
+    "problem_type",
+    "title",
+    "metadata",
+    "domain",
+    "render",
+    "answer"
+  ],
+  "render_order": [
+    "canvas",
+    "elements"
+  ],
+  "canvas_order": [
+    "width",
+    "height",
+    "background"
+  ],
+  "answer_order": [
+    "blanks",
+    "choices",
+    "answer_key"
+  ],
+  "layout_root_order": [
+    "schema_version",
+    "problem_id",
+    "metadata",
+    "canvas",
+    "summary",
+    "elements"
+  ],
+  "layout_diff_root_order": [
+    "schema_version",
+    "problem_id",
+    "metadata",
+    "diff",
+    "metrics"
+  ]
+}

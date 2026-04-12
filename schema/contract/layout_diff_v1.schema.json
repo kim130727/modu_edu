@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "modu_math.layout_diff.v1",
+  "title": "modu_math layout diff v1 contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "problem_id",
+    "metadata",
+    "diff",
+    "metrics"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "modu_math.layout_diff.v1"
+    },
+    "problem_id": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "diff": {
+      "type": "object"
+    },
+    "metrics": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "modu_edu.semantic.v1",
+  "render_contract_version": "modu_edu.render.v1",
+  "problem_id": "soc_0001",
+  "problem_type": "Social::CauseEffectChoice",
+  "title": "지역 축제의 역할",
+  "metadata": {
+    "subject": "social",
+    "grade": "elementary_6",
+    "difficulty": "intermediate",
+    "language": "ko",
+    "tags": [
+      "community",
+      "local_economy",
+      "cause_effect"
+    ]
+  },
+  "domain": {
+    "content_type": "concept_and_data_interpretation",
+    "topic": "지역 축제",
+    "core_concepts": [
+      {
+        "id": "cc1",
+        "name": "지역 공동체",
+        "description": "같은 지역에서 함께 살아가는 사람들의 모임"
+      },
+      {
+        "id": "cc2",
+        "name": "지역 경제",
+        "description": "지역 안에서 이루어지는 생산과 소비 활동"
+      }
+    ],
+    "entities": [
+      {
+        "id": "e1",
+        "type": "place",
+        "name": "청양군"
+      },
+      {
+        "id": "e2",
+        "type": "event",
+        "name": "지역 축제"
+      },
+      {
+        "id": "e3",
+        "type": "group",
+        "name": "지역 주민"
+      },
+      {
+        "id": "e4",
+        "type": "group",
+        "name": "관광객"
+      }
+    ],
+    "causal_links": [
+      {
+        "id": "cl1",
+        "cause": "지역 축제 개최",
+        "effect": "관광객 증가"
+      },
+      {
+        "id": "cl2",
+        "cause": "관광객 증가",
+        "effect": "지역 상점 이용 증가"
+      }
+    ],
+    "source_materials": [
+      {
+        "id": "m1",
+        "type": "table",
+        "title": "축제 기간 방문객 수",
+        "data": [
+          {
+            "year": 2024,
+            "visitors": 10000
+          },
+          {
+            "year": 2025,
+            "visitors": 13000
+          }
+        ]
+      }
+    ],
+    "prompt": {
+      "question_type": "cause_effect_inference",
+      "text": "자료를 보고 지역 축제가 지역 경제에 미치는 영향으로 가장 알맞은 것은 무엇입니까?"
+    },
+    "learning_activity": {
+      "activity_type": "data_interpretation_choice",
+      "hint_levels": [
+        "concept_hint",
+        "cause_effect_hint",
+        "table_highlight"
+      ]
+    }
+  },
+  "render": {
+    "canvas": {
+      "width": 1280,
+      "height": 720,
+      "background": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "title",
+        "type": "text",
+        "text": "지역 축제의 역할",
+        "role": "title"
+      },
+      {
+        "id": "topic",
+        "type": "text",
+        "text": "주제: 지역 축제",
+        "role": "section_title"
+      },
+      {
+        "id": "table_m1",
+        "type": "table",
+        "source_material_id": "m1",
+        "role": "data"
+      },
+      {
+        "id": "question",
+        "type": "text",
+        "text": "자료를 보고 지역 축제가 지역 경제에 미치는 영향으로 가장 알맞은 것은 무엇입니까?",
+        "role": "prompt"
+      },
+      {
+        "id": "choices",
+        "type": "choice_list",
+        "choice_ids": [
+          "a1",
+          "a2",
+          "a3",
+          "a4"
+        ],
+        "role": "interactive"
+      }
+    ]
+  },
+  "answer": {
+    "blanks": [],
+    "choices": [
+      {
+        "id": "a1",
+        "text": "지역 상점 이용이 줄어든다."
+      },
+      {
+        "id": "a2",
+        "text": "관광객이 줄어든다."
+      },
+      {
+        "id": "a3",
+        "text": "지역 상점 이용이 늘어날 수 있다."
+      },
+      {
+        "id": "a4",
+        "text": "주민 수가 갑자기 감소한다."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "a3",
+      "evidence_required": [
+        "m1",
+        "cl1",
+        "cl2"
+      ]
+    }
+  }
+}
