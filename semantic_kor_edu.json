@@ -1,0 +1,81 @@
+{
+  "schema_version": "edu.korean.semantic.v1",
+  "subject": "korean",
+  "item_id": "kor_0001",
+  "title": "중심 생각 찾기",
+  "metadata": {
+    "grade": "elementary_5",
+    "difficulty": "intermediate",
+    "language": "ko",
+    "tags": ["reading", "main_idea", "evidence"]
+  },
+  "domain": {
+    "content_type": "reading_comprehension",
+    "passage": {
+      "title": "우리 동네 작은 도서관",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "sentences": [
+            {
+              "id": "s1",
+              "text": "우리 동네에는 작은 도서관이 있습니다."
+            },
+            {
+              "id": "s2",
+              "text": "이 도서관은 주민들이 함께 가꾸고 있습니다."
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "sentences": [
+            {
+              "id": "s3",
+              "text": "도서관에서는 책을 읽는 일뿐 아니라 여러 모임도 열립니다."
+            }
+          ]
+        }
+      ]
+    },
+    "discourse": {
+      "topic": "작은 도서관의 역할",
+      "main_idea": "작은 도서관은 주민이 함께 만드는 소중한 공간이다.",
+      "paragraph_roles": [
+        {"paragraph_id": "p1", "role": "introduction"},
+        {"paragraph_id": "p2", "role": "support_detail"}
+      ],
+      "evidence_spans": [
+        {
+          "id": "e1",
+          "sentence_ids": ["s2", "s3"],
+          "supports": "main_idea"
+        }
+      ]
+    },
+    "language_features": {
+      "keywords": ["작은 도서관", "주민", "모임"],
+      "expression_types": [],
+      "speaker": null,
+      "point_of_view": null
+    },
+    "question": {
+      "question_type": "main_idea",
+      "prompt": "이 글의 중심 생각으로 알맞은 것은 무엇입니까?",
+      "choices": [
+        {"id": "a1", "text": "도서관은 책만 빌리는 곳이다."},
+        {"id": "a2", "text": "작은 도서관은 주민이 함께 만드는 공간이다."},
+        {"id": "a3", "text": "도서관은 조용해야만 한다."},
+        {"id": "a4", "text": "모든 도서관은 아주 크다."}
+      ]
+    }
+  },
+  "interaction": {
+    "activity_type": "choice_with_evidence",
+    "hint_levels": ["keyword_highlight", "paragraph_role_hint"]
+  },
+  "answer": {
+    "answer_key": "a2",
+    "evidence_required": ["e1"]
+  }
+}

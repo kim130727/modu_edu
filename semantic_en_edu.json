@@ -1,0 +1,112 @@
+{
+  "schema_version": "edu.english.semantic.v1",
+  "subject": "english",
+  "item_id": "eng_0001",
+  "title": "Meaning-unit reading practice",
+  "metadata": {
+    "grade": "elementary_5",
+    "difficulty": "beginner",
+    "language": "en",
+    "tags": ["meaning_unit", "reading", "listening", "speaking"]
+  },
+  "domain": {
+    "content_type": "sentence_learning",
+    "text": {
+      "full_text": "I want to go to the library after school.",
+      "translation": "나는 방과 후에 도서관에 가고 싶다.",
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "I want to go to the library after school."
+        }
+      ]
+    },
+    "tokens": [
+      { "id": "t1", "text": "I", "pos": "PRON" },
+      { "id": "t2", "text": "want", "pos": "VERB" },
+      { "id": "t3", "text": "to", "pos": "PART" },
+      { "id": "t4", "text": "go", "pos": "VERB" },
+      { "id": "t5", "text": "to", "pos": "ADP" },
+      { "id": "t6", "text": "the", "pos": "DET" },
+      { "id": "t7", "text": "library", "pos": "NOUN" },
+      { "id": "t8", "text": "after", "pos": "ADP" },
+      { "id": "t9", "text": "school", "pos": "NOUN" }
+    ],
+    "meaning_units": [
+      {
+        "id": "mu1",
+        "sentence_id": "s1",
+        "text": "I want to",
+        "role": "intent",
+        "token_range": ["t1", "t2", "t3"],
+        "level": "beginner"
+      },
+      {
+        "id": "mu2",
+        "sentence_id": "s1",
+        "text": "go to the library",
+        "role": "action_destination",
+        "token_range": ["t4", "t5", "t6", "t7"],
+        "level": "beginner"
+      },
+      {
+        "id": "mu3",
+        "sentence_id": "s1",
+        "text": "after school",
+        "role": "time",
+        "token_range": ["t8", "t9"],
+        "level": "beginner"
+      }
+    ],
+    "unit_profiles": {
+      "default": ["mu1", "mu2", "mu3"],
+      "speaking": ["mu1", "mu2", "mu3"],
+      "grammar_focus": ["mu1", "mu2", "mu3"]
+    },
+    "linguistics": {
+      "pattern": "want to + verb",
+      "grammar_points": [
+        "want to 부정사",
+        "장소 표현",
+        "시간 부사구"
+      ]
+    },
+    "audio": {
+      "playback_units": ["mu1", "mu2", "mu3"],
+      "timing": [
+        { "unit_id": "mu1", "start_sec": 0.0, "end_sec": 0.8 },
+        { "unit_id": "mu2", "start_sec": 0.8, "end_sec": 2.0 },
+        { "unit_id": "mu3", "start_sec": 2.0, "end_sec": 2.7 }
+      ],
+      "pronunciation_focus": [
+        {
+          "token_id": "t7",
+          "text": "library",
+          "note": "강세 위치 주의"
+        }
+      ]
+    },
+    "visual": {
+      "scene_refs": ["student", "library", "after_school"],
+      "unit_to_scene_map": [
+        { "unit_id": "mu2", "scene_ref": "library" },
+        { "unit_id": "mu3", "scene_ref": "after_school" }
+      ]
+    }
+  },
+  "interaction": {
+    "activity_type": "meaning_unit_reorder",
+    "hint_levels": [
+      "unit_boundary_hint",
+      "translation_hint",
+      "audio_repeat"
+    ],
+    "supported_modes": ["reading", "listening", "speaking"]
+  },
+  "answer": {
+    "correct_unit_order": ["mu1", "mu2", "mu3"],
+    "rubric": {
+      "full_score_condition": "모든 의미 단위를 올바른 순서로 배열"
+    }
+  }
+}
