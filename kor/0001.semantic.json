@@ -1,0 +1,206 @@
+{
+  "schema_version": "modu_edu.semantic.v1",
+  "render_contract_version": "modu_edu.render.v1",
+  "problem_id": "kor_0001",
+  "problem_type": "Korean::MainIdeaChoice",
+  "title": "변증법의 핵심 이해",
+  "metadata": {
+    "subject": "korean",
+    "grade": "high_1",
+    "difficulty": "intermediate",
+    "language": "ko",
+    "tags": [
+      "reading",
+      "main_idea",
+      "philosophy",
+      "evidence"
+    ]
+  },
+  "domain": {
+    "content_type": "reading_comprehension",
+    "passage": {
+      "title": "헤겔의 변증법",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "sentences": [
+            {
+              "id": "s1",
+              "text": "헤겔에 따르면 변증법은 정(正), 반(反), 합(合)의 3단계 과정을 통해 진리에 도달한다."
+            },
+            {
+              "id": "s2",
+              "text": "첫 번째 단계인 '정'은 정립된 개념이나 주장을 의미하며, 이 자체로 불완전함을 가지고 있다."
+            },
+            {
+              "id": "s3",
+              "text": "이어지는 '반'은 '정'에 내재한 모순을 발견하고 부정하는 과정이다."
+            },
+            {
+              "id": "s4",
+              "text": "최종 단계인 '합'은 '정'과 '반'의 모순을 지양(止揚)하여 더 높은 차원에서 종합하는 것이다."
+            },
+            {
+              "id": "s5",
+              "text": "즉, 변증법은 고정된 상태가 아니라 끊임없이 변화하고 발전하는 인식의 과정이라 할 수 있다."
+            }
+          ]
+        }
+      ]
+    },
+    "discourse": {
+      "topic": "헤겔의 변증법",
+      "main_idea": "변증법은 정-반-합의 과정을 통해 모순을 지양하며 더 높은 단계로 발전해 가는 인식의 운동이다.",
+      "paragraph_roles": [
+        {
+          "paragraph_id": "p1",
+          "role": "definition_and_process"
+        }
+      ],
+      "evidence_spans": [
+        {
+          "id": "e1",
+          "sentence_ids": [
+            "s1",
+            "s4"
+          ],
+          "supports": "main_idea"
+        },
+        {
+          "id": "e2",
+          "sentence_ids": [
+            "s5"
+          ],
+          "supports": "main_idea"
+        }
+      ]
+    },
+    "language_features": {
+      "keywords": [
+        "변증법",
+        "정",
+        "반",
+        "합",
+        "지양",
+        "모순"
+      ],
+      "expression_types": [
+        "정의",
+        "과정 설명",
+        "요약"
+      ],
+      "speaker": null,
+      "point_of_view": "설명적 3인칭"
+    },
+    "prompt": {
+      "question_type": "main_idea",
+      "text": "윗글의 중심 생각으로 가장 알맞은 것은 무엇인가?"
+    },
+    "learning_activity": {
+      "activity_type": "choice_with_evidence",
+      "hint_levels": [
+        "keyword_highlight",
+        "main_idea_hint",
+        "evidence_sentence_hint"
+      ]
+    },
+    "linguistics": {
+      "word_role_profile": {
+        "content_pos": [
+          "NOUN",
+          "PROPN",
+          "VERB",
+          "ADJ",
+          "ADV",
+          "NUM"
+        ],
+        "function_pos": [
+          "PRON",
+          "DET",
+          "ADP",
+          "SCONJ",
+          "CCONJ",
+          "PART",
+          "AUX"
+        ],
+        "content_token_ids": [],
+        "function_token_ids": [],
+        "speaking_emphasis_rule": "content_words_strong_function_words_weak"
+      }
+    }
+  },
+  "render": {
+    "canvas": {
+      "width": 1280,
+      "height": 720,
+      "background": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "title",
+        "type": "text",
+        "text": "변증법의 핵심 이해",
+        "role": "title"
+      },
+      {
+        "id": "passage_title",
+        "type": "text",
+        "text": "헤겔의 변증법",
+        "role": "section_title"
+      },
+      {
+        "id": "passage_body",
+        "type": "paragraphs",
+        "paragraph_ids": [
+          "p1"
+        ],
+        "role": "passage"
+      },
+      {
+        "id": "question",
+        "type": "text",
+        "text": "윗글의 중심 생각으로 가장 알맞은 것은 무엇인가?",
+        "role": "prompt"
+      },
+      {
+        "id": "choices",
+        "type": "choice_list",
+        "choice_ids": [
+          "a1",
+          "a2",
+          "a3",
+          "a4"
+        ],
+        "role": "interactive"
+      }
+    ]
+  },
+  "answer": {
+    "blanks": [],
+    "choices": [
+      {
+        "id": "a1",
+        "text": "변증법은 고정된 진리를 반복 확인하는 방식이다."
+      },
+      {
+        "id": "a2",
+        "text": "변증법은 정과 반의 모순을 지양해 더 높은 인식으로 발전하는 과정이다."
+      },
+      {
+        "id": "a3",
+        "text": "변증법은 정 단계만으로 완전한 결론을 얻는 방법이다."
+      },
+      {
+        "id": "a4",
+        "text": "변증법은 모순을 제거하지 않고 그대로 유지하는 입장이다."
+      }
+    ],
+    "answer_key": {
+      "choice_id": "a2",
+      "evidence_required": [
+        "e1",
+        "e2"
+      ]
+    }
+  }
+}
