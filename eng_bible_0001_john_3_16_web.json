@@ -1,0 +1,525 @@
+{
+  "schema_version": "modu_edu.semantic.v1",
+  "render_contract_version": "modu_edu.render.v1",
+  "problem_id": "bible_eng_0001",
+  "problem_type": "EnglishBible::ChunkReorder",
+  "title": "Bible chunk reading practice",
+  "metadata": {
+    "subject": "english_bible",
+    "grade": "elementary_5",
+    "difficulty": "beginner",
+    "language": "en",
+    "tags": [
+      "bible",
+      "chunk",
+      "reading",
+      "listening",
+      "speaking",
+      "memory_verse"
+    ]
+  },
+  "domain": {
+    "content_type": "verse_learning",
+    "bible_reference": {
+      "book": "John",
+      "chapter": 3,
+      "verse": 16,
+      "translation": "WEB"
+    },
+    "text": {
+      "full_text": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
+      "translation": "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니, 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라.",
+      "sentences": [
+        {
+          "id": "s1",
+          "text": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life."
+        }
+      ]
+    },
+    "tokens": [
+      {
+        "id": "t1",
+        "text": "For",
+        "pos": "SCONJ"
+      },
+      {
+        "id": "t2",
+        "text": "God",
+        "pos": "PROPN"
+      },
+      {
+        "id": "t3",
+        "text": "so",
+        "pos": "ADV"
+      },
+      {
+        "id": "t4",
+        "text": "loved",
+        "pos": "VERB"
+      },
+      {
+        "id": "t5",
+        "text": "the",
+        "pos": "DET"
+      },
+      {
+        "id": "t6",
+        "text": "world",
+        "pos": "NOUN"
+      },
+      {
+        "id": "t7",
+        "text": "that",
+        "pos": "SCONJ"
+      },
+      {
+        "id": "t8",
+        "text": "he",
+        "pos": "PRON"
+      },
+      {
+        "id": "t9",
+        "text": "gave",
+        "pos": "VERB"
+      },
+      {
+        "id": "t10",
+        "text": "his",
+        "pos": "DET"
+      },
+      {
+        "id": "t11",
+        "text": "one",
+        "pos": "NUM"
+      },
+      {
+        "id": "t12",
+        "text": "and",
+        "pos": "CCONJ"
+      },
+      {
+        "id": "t13",
+        "text": "only",
+        "pos": "ADJ"
+      },
+      {
+        "id": "t14",
+        "text": "Son",
+        "pos": "NOUN"
+      },
+      {
+        "id": "t15",
+        "text": "that",
+        "pos": "SCONJ"
+      },
+      {
+        "id": "t16",
+        "text": "whoever",
+        "pos": "PRON"
+      },
+      {
+        "id": "t17",
+        "text": "believes",
+        "pos": "VERB"
+      },
+      {
+        "id": "t18",
+        "text": "in",
+        "pos": "ADP"
+      },
+      {
+        "id": "t19",
+        "text": "him",
+        "pos": "PRON"
+      },
+      {
+        "id": "t20",
+        "text": "should",
+        "pos": "AUX"
+      },
+      {
+        "id": "t21",
+        "text": "not",
+        "pos": "PART"
+      },
+      {
+        "id": "t22",
+        "text": "perish",
+        "pos": "VERB"
+      },
+      {
+        "id": "t23",
+        "text": "but",
+        "pos": "CCONJ"
+      },
+      {
+        "id": "t24",
+        "text": "have",
+        "pos": "VERB"
+      },
+      {
+        "id": "t25",
+        "text": "eternal",
+        "pos": "ADJ"
+      },
+      {
+        "id": "t26",
+        "text": "life",
+        "pos": "NOUN"
+      }
+    ],
+    "chunks": [
+      {
+        "id": "ch1",
+        "sentence_id": "s1",
+        "text": "For God so loved the world",
+        "role": "main_message",
+        "token_range": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "level": "beginner"
+      },
+      {
+        "id": "ch2",
+        "sentence_id": "s1",
+        "text": "that he gave his one and only Son",
+        "role": "gift_action",
+        "token_range": [
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14"
+        ],
+        "level": "beginner"
+      },
+      {
+        "id": "ch3",
+        "sentence_id": "s1",
+        "text": "that whoever believes in him",
+        "role": "faith_condition",
+        "token_range": [
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19"
+        ],
+        "level": "beginner"
+      },
+      {
+        "id": "ch4",
+        "sentence_id": "s1",
+        "text": "should not perish",
+        "role": "negative_result_avoided",
+        "token_range": [
+          "t20",
+          "t21",
+          "t22"
+        ],
+        "level": "beginner"
+      },
+      {
+        "id": "ch5",
+        "sentence_id": "s1",
+        "text": "but have eternal life",
+        "role": "positive_result",
+        "token_range": [
+          "t23",
+          "t24",
+          "t25",
+          "t26"
+        ],
+        "level": "beginner"
+      }
+    ],
+    "chunk_profiles": {
+      "default": [
+        "ch1",
+        "ch2",
+        "ch3",
+        "ch4",
+        "ch5"
+      ],
+      "speaking": [
+        "ch1",
+        "ch2",
+        "ch3",
+        "ch4",
+        "ch5"
+      ],
+      "grammar_focus": [
+        "ch1",
+        "ch3",
+        "ch4",
+        "ch5"
+      ],
+      "memory_verse": [
+        "ch1",
+        "ch2",
+        "ch3",
+        "ch4",
+        "ch5"
+      ]
+    },
+    "linguistics": {
+      "pattern": "so ... that ... / whoever + verb / not ... but ...",
+      "grammar_points": [
+        "so ... that ... 구조",
+        "whoever 주어절",
+        "not A but B 대조 표현"
+      ],
+      "word_role_profile": {
+        "content_pos": [
+          "PROPN",
+          "NOUN",
+          "VERB",
+          "ADJ",
+          "ADV",
+          "NUM"
+        ],
+        "function_pos": [
+          "PRON",
+          "DET",
+          "ADP",
+          "SCONJ",
+          "CCONJ",
+          "PART",
+          "AUX"
+        ],
+        "content_token_ids": [
+          "t2",
+          "t3",
+          "t4",
+          "t6",
+          "t9",
+          "t11",
+          "t13",
+          "t14",
+          "t17",
+          "t22",
+          "t24",
+          "t25",
+          "t26"
+        ],
+        "function_token_ids": [
+          "t1",
+          "t5",
+          "t7",
+          "t8",
+          "t10",
+          "t12",
+          "t15",
+          "t16",
+          "t18",
+          "t19",
+          "t20",
+          "t21",
+          "t23"
+        ],
+        "speaking_emphasis_rule": "content_words_strong_function_words_weak"
+      }
+    },
+    "audio": {
+      "playback_chunks": [
+        "ch1",
+        "ch2",
+        "ch3",
+        "ch4",
+        "ch5"
+      ],
+      "timing": [
+        {
+          "chunk_id": "ch1",
+          "start_sec": 0.0,
+          "end_sec": 1.6
+        },
+        {
+          "chunk_id": "ch2",
+          "start_sec": 1.6,
+          "end_sec": 3.5
+        },
+        {
+          "chunk_id": "ch3",
+          "start_sec": 3.5,
+          "end_sec": 4.8
+        },
+        {
+          "chunk_id": "ch4",
+          "start_sec": 4.8,
+          "end_sec": 5.9
+        },
+        {
+          "chunk_id": "ch5",
+          "start_sec": 5.9,
+          "end_sec": 7.2
+        }
+      ],
+      "pronunciation_focus": [
+        {
+          "token_id": "t4",
+          "text": "loved",
+          "note": "끝소리 /d/를 분명히 읽기"
+        },
+        {
+          "token_id": "t17",
+          "text": "believes",
+          "note": "3인칭 단수 발음에 주의"
+        },
+        {
+          "token_id": "t25",
+          "text": "eternal",
+          "note": "강세 위치 주의"
+        }
+      ]
+    },
+    "visual": {
+      "scene_refs": [
+        "god_loves_world",
+        "gift_of_son",
+        "believer",
+        "eternal_life"
+      ],
+      "chunk_to_scene_map": [
+        {
+          "chunk_id": "ch1",
+          "scene_ref": "god_loves_world"
+        },
+        {
+          "chunk_id": "ch2",
+          "scene_ref": "gift_of_son"
+        },
+        {
+          "chunk_id": "ch3",
+          "scene_ref": "believer"
+        },
+        {
+          "chunk_id": "ch5",
+          "scene_ref": "eternal_life"
+        }
+      ]
+    },
+    "learning_activity": {
+      "activity_type": "chunk_reorder",
+      "hint_levels": [
+        "chunk_boundary_hint",
+        "translation_hint",
+        "audio_repeat"
+      ],
+      "supported_modes": [
+        "reading",
+        "listening",
+        "speaking",
+        "memorization"
+      ]
+    },
+    "faith_support": {
+      "theme": "God's love and eternal life",
+      "core_message_ko": "하나님의 사랑과 믿음을 통한 영생",
+      "memory_focus": "verse_recitation"
+    },
+    "vocabulary_support": [
+      {
+        "word": "world",
+        "meaning_ko": "세상"
+      },
+      {
+        "word": "believes",
+        "meaning_ko": "믿는다"
+      },
+      {
+        "word": "perish",
+        "meaning_ko": "멸망하다"
+      },
+      {
+        "word": "eternal life",
+        "meaning_ko": "영생"
+      }
+    ]
+  },
+  "render": {
+    "canvas": {
+      "width": 1280,
+      "height": 720,
+      "background": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "title",
+        "type": "text",
+        "text": "Bible chunk reading practice",
+        "role": "title"
+      },
+      {
+        "id": "reference",
+        "type": "text",
+        "text": "John 3:16 (WEB)",
+        "role": "subtitle"
+      },
+      {
+        "id": "sentence",
+        "type": "text",
+        "text": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
+        "role": "prompt"
+      },
+      {
+        "id": "translation",
+        "type": "text",
+        "text": "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니, 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라.",
+        "role": "supporting_text"
+      },
+      {
+        "id": "reorder_chunks",
+        "type": "chunk_cards",
+        "chunk_ids": [
+          "ch1",
+          "ch2",
+          "ch3",
+          "ch4",
+          "ch5"
+        ],
+        "role": "interactive"
+      }
+    ]
+  },
+  "answer": {
+    "blanks": [],
+    "choices": [
+      {
+        "id": "ch1",
+        "text": "For God so loved the world"
+      },
+      {
+        "id": "ch2",
+        "text": "that he gave his one and only Son"
+      },
+      {
+        "id": "ch3",
+        "text": "that whoever believes in him"
+      },
+      {
+        "id": "ch4",
+        "text": "should not perish"
+      },
+      {
+        "id": "ch5",
+        "text": "but have eternal life"
+      }
+    ],
+    "answer_key": [
+      "ch1",
+      "ch2",
+      "ch3",
+      "ch4",
+      "ch5"
+    ]
+  }
+}

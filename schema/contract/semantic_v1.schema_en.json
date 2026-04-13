@@ -2,15 +2,15 @@
   "schema_version": "modu_edu.semantic.v1",
   "render_contract_version": "modu_edu.render.v1",
   "problem_id": "eng_0001",
-  "problem_type": "English::MeaningUnitReorder",
-  "title": "Meaning-unit reading practice",
+  "problem_type": "English::ChunkReorder",
+  "title": "Chunk reading practice",
   "metadata": {
     "subject": "english",
     "grade": "elementary_5",
     "difficulty": "beginner",
     "language": "en",
     "tags": [
-      "meaning_unit",
+      "chunk",
       "reading",
       "listening",
       "speaking"
@@ -75,9 +75,9 @@
         "pos": "NOUN"
       }
     ],
-    "meaning_units": [
+    "chunks": [
       {
-        "id": "mu1",
+        "id": "ch1",
         "sentence_id": "s1",
         "text": "I want to",
         "role": "intent",
@@ -89,7 +89,7 @@
         "level": "beginner"
       },
       {
-        "id": "mu2",
+        "id": "ch2",
         "sentence_id": "s1",
         "text": "go to the library",
         "role": "action_destination",
@@ -102,7 +102,7 @@
         "level": "beginner"
       },
       {
-        "id": "mu3",
+        "id": "ch3",
         "sentence_id": "s1",
         "text": "after school",
         "role": "time",
@@ -113,21 +113,21 @@
         "level": "beginner"
       }
     ],
-    "unit_profiles": {
+    "chunk_profiles": {
       "default": [
-        "mu1",
-        "mu2",
-        "mu3"
+        "ch1",
+        "ch2",
+        "ch3"
       ],
       "speaking": [
-        "mu1",
-        "mu2",
-        "mu3"
+        "ch1",
+        "ch2",
+        "ch3"
       ],
       "grammar_focus": [
-        "mu1",
-        "mu2",
-        "mu3"
+        "ch1",
+        "ch2",
+        "ch3"
       ]
     },
     "linguistics": {
@@ -136,27 +136,60 @@
         "want to 부정사",
         "장소 표현",
         "시간 부사구"
-      ]
+      ],
+      "word_role_profile": {
+        "content_pos": [
+          "PROPN",
+          "NOUN",
+          "VERB",
+          "ADJ",
+          "ADV",
+          "NUM"
+        ],
+        "function_pos": [
+          "PRON",
+          "DET",
+          "ADP",
+          "SCONJ",
+          "CCONJ",
+          "PART",
+          "AUX"
+        ],
+        "content_token_ids": [
+          "t2",
+          "t4",
+          "t7",
+          "t9"
+        ],
+        "function_token_ids": [
+          "t1",
+          "t3",
+          "t5",
+          "t6",
+          "t8"
+        ],
+        "speaking_emphasis_rule": "content_words_strong_function_words_weak"
+      }
     },
     "audio": {
-      "playback_units": [
-        "mu1",
-        "mu2",
-        "mu3"
+      "playback_chunks": [
+        "ch1",
+        "ch2",
+        "ch3"
       ],
       "timing": [
         {
-          "unit_id": "mu1",
+          "chunk_id": "ch1",
           "start_sec": 0.0,
           "end_sec": 0.8
         },
         {
-          "unit_id": "mu2",
+          "chunk_id": "ch2",
           "start_sec": 0.8,
           "end_sec": 2.0
         },
         {
-          "unit_id": "mu3",
+          "chunk_id": "ch3",
           "start_sec": 2.0,
           "end_sec": 2.7
         }
@@ -175,21 +208,21 @@
         "library",
         "after_school"
       ],
-      "unit_to_scene_map": [
+      "chunk_to_scene_map": [
         {
-          "unit_id": "mu2",
+          "chunk_id": "ch2",
           "scene_ref": "library"
         },
         {
-          "unit_id": "mu3",
+          "chunk_id": "ch3",
           "scene_ref": "after_school"
         }
       ]
     },
     "learning_activity": {
-      "activity_type": "meaning_unit_reorder",
+      "activity_type": "chunk_reorder",
       "hint_levels": [
-        "unit_boundary_hint",
+        "chunk_boundary_hint",
         "translation_hint",
         "audio_repeat"
       ],
@@ -210,7 +243,7 @@
       {
         "id": "title",
         "type": "text",
-        "text": "Meaning-unit reading practice",
+        "text": "Chunk reading practice",
         "role": "title"
       },
       {
@@ -226,12 +259,12 @@
         "role": "supporting_text"
       },
       {
-        "id": "reorder_units",
-        "type": "meaning_unit_cards",
-        "unit_ids": [
-          "mu1",
-          "mu2",
-          "mu3"
+        "id": "reorder_chunks",
+        "type": "chunk_cards",
+        "chunk_ids": [
+          "ch1",
+          "ch2",
+          "ch3"
         ],
         "role": "interactive"
       }
@@ -241,22 +274,22 @@
     "blanks": [],
     "choices": [
       {
-        "id": "mu1",
+        "id": "ch1",
         "text": "I want to"
       },
       {
-        "id": "mu2",
+        "id": "ch2",
         "text": "go to the library"
       },
       {
-        "id": "mu3",
+        "id": "ch3",
         "text": "after school"
       }
     ],
     "answer_key": [
-      "mu1",
-      "mu2",
-      "mu3"
+      "ch1",
+      "ch2",
+      "ch3"
     ]
   }
 }

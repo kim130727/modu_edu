@@ -1,0 +1,15 @@
+[project]
+name = "modu-edu"
+version = "0.1.0"
+description = "Educational content utilities for modu_edu"
+requires-python = ">=3.12"
+dependencies = [
+    "edge-tts>=7.2.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = false

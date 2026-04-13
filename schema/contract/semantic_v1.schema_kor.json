@@ -88,6 +88,30 @@
         "keyword_highlight",
         "paragraph_role_hint"
       ]
+    },
+    "linguistics": {
+      "word_role_profile": {
+        "content_pos": [
+          "NOUN",
+          "PROPN",
+          "VERB",
+          "ADJ",
+          "ADV",
+          "NUM"
+        ],
+        "function_pos": [
+          "PRON",
+          "DET",
+          "ADP",
+          "SCONJ",
+          "CCONJ",
+          "PART",
+          "AUX"
+        ],
+        "content_token_ids": [],
+        "function_token_ids": [],
+        "speaking_emphasis_rule": "content_words_strong_function_words_weak"
+      }
     }
   },
   "render": {
